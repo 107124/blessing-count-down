@@ -1,0 +1,55 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  align-items: center;
+}
+
+.page-container {
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 42px 42px 42px 42px;
+}
+
+.times {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 100vw;
+}
+
+.words {
+  color: rgb(138, 1, 1);
+  font-size: 38px;
+  font-weight: 900;
+}
+
+.numbers {
+  color: white;
+  font-weight: 900;
+  font-size: 100px;
+  margin: 15px;
+}
+
+.start-button {
+  color: white;
+  border-radius: 30px;
+  font-size: 20px;
+  width: 30%;
+  height: 42px;
+  background-color: blue;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
