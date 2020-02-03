@@ -3,6 +3,11 @@
   text-align: center;
   align-items: center;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 285px;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
@@ -23,6 +28,8 @@ body {
   justify-content: center;
   align-items: center;
   margin: 10px 42px 42px 42px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .times {
