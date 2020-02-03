@@ -61,32 +61,41 @@ class Timer extends React.Component {
     // Check if we're at zero.
     if (seconds == 0) {
       clearInterval(this.timer);
+      this.setState({
+        time: this.secondsToTime(seconds),
+        seconds: 0
+      });
     }
   }
 
   render() {
     return (
       <div>
+        <div className="times">
+          <div className="numbers">
+            <span className="zero">0</span>
+            <span className="words-done">YRS</span>
+          </div>
+          <div className="numbers">
+            <span className="zero">0</span>
+            <span className="words-done">DAY</span>
+          </div>
+          <div className="numbers">
+            {this.state.time.h}
+            <span className="words">HRS</span>
+          </div>
+          <div className="numbers">
+            {this.state.time.m}
+            <span className="words">MIN</span>
+          </div>
+          <div className="numbers">
+            {this.state.time.s}
+            <span className="words">SEC</span>
+          </div>
+        </div>
         <button className="start-button" onClick={this.startTimer}>
           Start
         </button>
-        <div className="times">
-          <div className="numbers">
-            0 <span className="words">Years</span>
-          </div>
-          <div className="numbers">
-            0 <span className="words">Days</span>
-          </div>
-          <div className="numbers">
-            {this.state.time.h} <span className="words">Hours</span>
-          </div>
-          <div className="numbers">
-            {this.state.time.m} <span className="words">Minutes</span>
-          </div>
-          <div className="numbers">
-            {this.state.time.s} <span className="words">Seconds</span>
-          </div>
-        </div>
       </div>
     );
   }

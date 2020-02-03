@@ -17,21 +17,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 42px 42px 42px 42px;
+  margin: 10px 42px 42px 42px;
 }
 
 .times {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-self: center;
   width: 100vw;
+  grid-gap: 0px;
+}
+
+.zero {
+  color: rgb(138, 1, 1);
 }
 
 .words {
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.words-done {
   color: rgb(138, 1, 1);
-  font-size: 38px;
+  font-size: 20px;
   font-weight: 900;
 }
 
@@ -39,7 +51,7 @@ body {
   color: white;
   font-weight: 900;
   font-size: 100px;
-  margin: 15px;
+  margin-top: 15px;
 }
 
 .start-button {
@@ -47,8 +59,9 @@ body {
   border-radius: 30px;
   font-size: 20px;
   width: 30%;
+  margin: 10px;
   height: 42px;
-  background-color: blue;
+  background-color: rgb(138, 1, 1);
   outline: none;
   cursor: pointer;
   text-decoration: none;
