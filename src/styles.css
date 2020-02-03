@@ -51,14 +51,14 @@ body {
   color: white;
   font-weight: 900;
   font-size: 100px;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .start-button {
   color: white;
   border-radius: 30px;
   font-size: 20px;
-  width: 150px;
+  width: 185px;
   margin: 10px;
   height: 42px;
   background-color: rgb(138, 1, 1);
