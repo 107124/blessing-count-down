@@ -2,6 +2,7 @@
   font-family: sans-serif;
   text-align: center;
   align-items: center;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -9,6 +10,10 @@ body {
   justify-content: center;
   background-color: black;
   align-items: center;
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .page-container {
